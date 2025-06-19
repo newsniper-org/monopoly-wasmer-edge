@@ -1,0 +1,16 @@
+[package]
+name = "multiplayer-monopoly"
+version = "0.1.0"
+description = "Multiplayer Monopoly game with Matrix protocol integration"
+
+[dependencies]
+
+[fs]
+"/public" = "./dist"
+
+[[command]]
+name = "start"
+module = "./dist/server.wasm"
+
+[build]
+command = "npm run build"

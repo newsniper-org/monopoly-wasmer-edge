@@ -1,0 +1,44 @@
+{
+  "name": "monopoly-core",
+  "version": "1.0.0",
+  "description": "Core library for Monopoly game",
+  "type": "module",
+  "main": "./dist/monopoly-core.umd.cjs",
+  "module": "./dist/monopoly-core.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/monopoly-core.js",
+      "require": "./dist/monopoly-core.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "monopoly",
+    "game",
+    "core"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@types/uuid": "^9.0.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.2.6",
+    "vite-plugin-dts": "^3.8.1",
+    "vite-plugin-node-polyfills": "^0.21.0"
+  }
+}

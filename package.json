@@ -1,0 +1,30 @@
+{
+  "name": "monopoly",
+  "version": "1.0.0",
+  "description": "Multiplayer Monopoly Game",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "start:server": "npm run start --workspace=server",
+    "dev:server": "npm run dev --workspace=server"
+  },
+  "keywords": [
+    "monopoly",
+    "game",
+    "multiplayer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}
